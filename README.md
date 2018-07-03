@@ -8,22 +8,6 @@
 		4. HierarchyのUI -> Buttonを選択
 		5. Buttonのテキストや位置を自由に変更
 		6. C#スクリプトを書く
-		```C#:SceneButton.cs
-		using System.Collections;
-		using System.Collections.Generic;
-		using UnityEngine;
-		using UnityEngine.SceneManagement;
-
-		public class SceneButton : MonoBehaviour {
-			public void SceneLoadStage01() {
-				SceneManager.LoadScene("stage01");
-			}
-
-			public void SceneLoadTitle() {
-				SceneManager.LoadScene("Title");
-			}
-		}
-		```
 		7. SceneButton.csをButtonオブジェクトに取り付ける
 		8. ButtonのInspector -> OnClickの◎の横のスペースにからButtonオブジェクトをドラッグ
 		9. No FunctionとなっているところをSceneButton -> SceneLoadStage01()に変更
@@ -32,8 +16,25 @@
 	4. 画面遷移した後Sceneが暗くなった時の対処法
 		1. Window -> Lighting -> Settings
 		2. Sceneタブを選択 -> Auto Generateのチェックを外す -> Generate Lightingをクリック
-	![実行例](https://github.com/tsutarou10/unity/blob/master/gif/SceneTitle.gif)
 
+![実行例](https://github.com/tsutarou10/unity/blob/master/gif/SceneTitle.gif)
+
+```C#:SceneButton.cs
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class SceneButton : MonoBehaviour {
+	public void SceneLoadStage01() {
+		SceneManager.LoadScene("stage01");
+	}
+
+	public void SceneLoadTitle() {
+		SceneManager.LoadScene("Title");
+	}
+}
+```
 ## 2. フィールドの作り方
 
 ## 3. プレイヤーの作成と移動
