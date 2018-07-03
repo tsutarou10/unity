@@ -1,38 +1,38 @@
 ## 1. タイトル画面の作り方
-1. タイトル画面の次に遷移したいSceneの名前をstage01とする (後で紹介するスクリプトに合わせるため)
-2. Project -> Create -> Scene -> Rename -> Titleと入力
-3. 好きにデザインを作る (以下例)
-	1. MainCameraのInspector -> ClearFlagsをSolidColorにする
-	2. HierarchyのUI -> Textを選択
-	3. 自由にText、Font Sizeを変更
-	4. HierarchyのUI -> Buttonを選択
-	5. Buttonのテキストや位置を自由に変更
-	6. C#スクリプトを書く
-	```C#:SceneButton.cs
-	using System.Collections;
-	using System.Collections.Generic;
-	using UnityEngine;
-	using UnityEngine.SceneManagement;
+	1. タイトル画面の次に遷移したいSceneの名前をstage01とする (後で紹介するスクリプトに合わせるため)
+	2. Project -> Create -> Scene -> Rename -> Titleと入力
+	3. 好きにデザインを作る (以下例)
+		1. MainCameraのInspector -> ClearFlagsをSolidColorにする
+		2. HierarchyのUI -> Textを選択
+		3. 自由にText、Font Sizeを変更
+		4. HierarchyのUI -> Buttonを選択
+		5. Buttonのテキストや位置を自由に変更
+		6. C#スクリプトを書く
+		```C#:SceneButton.cs
+		using System.Collections;
+		using System.Collections.Generic;
+		using UnityEngine;
+		using UnityEngine.SceneManagement;
 
-	public class SceneButton : MonoBehaviour {
-		public void SceneLoadStage01() {
-			SceneManager.LoadScene("stage01");
-		}
+		public class SceneButton : MonoBehaviour {
+			public void SceneLoadStage01() {
+				SceneManager.LoadScene("stage01");
+			}
 
-		public void SceneLoadTitle() {
-			SceneManager.LoadScene("Title");
+			public void SceneLoadTitle() {
+				SceneManager.LoadScene("Title");
+			}
 		}
-	}
-	```
-	7. SceneButton.csをButtonオブジェクトに取り付ける
-	8. ButtonのInspector -> OnClickの◎の横のスペースにからButtonオブジェクトをドラッグ
-	9. No FunctionとなっているところをSceneButton -> SceneLoadStage01()に変更
-	10. File -> Build Settings -> Add Open Scenesで現在のSceneを使えるようにする
-	11. Titleでゲームスタートした後にボタンをクリックすると画面が遷移する
-4. 画面遷移した後Sceneが暗くなった時の対処法
-	1. Window -> Lighting -> Settings
-	2. Sceneタブを選択 -> Auto Generateのチェックを外す -> Generate Lightingをクリック
-![実行例](https://github.com/tsutarou10/unity/blob/master/gif/SceneTitle.gif)
+		```
+		7. SceneButton.csをButtonオブジェクトに取り付ける
+		8. ButtonのInspector -> OnClickの◎の横のスペースにからButtonオブジェクトをドラッグ
+		9. No FunctionとなっているところをSceneButton -> SceneLoadStage01()に変更
+		10. File -> Build Settings -> Add Open Scenesで現在のSceneを使えるようにする
+		11. Titleでゲームスタートした後にボタンをクリックすると画面が遷移する
+	4. 画面遷移した後Sceneが暗くなった時の対処法
+		1. Window -> Lighting -> Settings
+		2. Sceneタブを選択 -> Auto Generateのチェックを外す -> Generate Lightingをクリック
+	![実行例](https://github.com/tsutarou10/unity/blob/master/gif/SceneTitle.gif)
 
 ## 2. フィールドの作り方
 
