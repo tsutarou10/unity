@@ -32,7 +32,7 @@
 4. 画面遷移した後Sceneが暗くなった時の対処法
 	1. Window -> Lighting -> Settings
 	2. Sceneタブを選択 -> Auto Generateのチェックを外す -> Generate Lightingをクリック
-![実行例](http://github.com/tsutarou10/unity/gif/SceneTitle.gif)
+![実行例](http://github.com/tsutarou10/unity/gif/SceneTitle.gi://github.com/tsutarou10/unity/blob/master/gif/SceneTitle.gif)
 ## 2. フィールドの作り方
 
 ## 3. プレイヤーの作成と移動
