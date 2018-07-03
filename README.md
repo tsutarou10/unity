@@ -19,7 +19,7 @@
 
 ![実行例](https://github.com/tsutarou10/unity/blob/master/gif/SceneTitle.gif)
 
-```C#:SceneButton.cs
+```:SceneButton.cs
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
