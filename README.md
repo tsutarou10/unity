@@ -63,6 +63,8 @@ public class SceneButton : MonoBehaviour {
 1. ゲームクリア画面、ゲームオーバ画面の作成
 
 
+## 現段階でのプレイ画面
+![進捗](https://github.com/tsutarou10/unity/blob/master/gif/progress.gif)
 ## Inputについて
 ```C#
 if(Input.GetKey(KeyCode.Space)) {
@@ -85,3 +87,4 @@ if(Input.GetKey(KeyCode.Space)) {
 
 ## レイヤーって何？
 ## RayCastとは
+## 自作のキャラクター作成
